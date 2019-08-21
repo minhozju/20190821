@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="系统导航" description="Home" url="Default.aspx" >
+    <siteMapNode title="用户管理" description="Sysuser" url="">
+      <siteMapNode title="新增用户" description="Add Sysuser" url="AddUser.aspx" />
+      <siteMapNode title="编辑用户" description="Edit Sysuser" url="EditUser.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="教师管理"  description="teacher" url="">
+      <siteMapNode title="新增教师" description="Add Client" url="AddTeacher.aspx" />
+      <siteMapNode title="编辑教师" description="Edit Client" url="EditTeacher.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="学生管理"  description="student" url="">
+      <siteMapNode title="查询学生" description="Add student" url="SearchStudent.aspx" />
+      <siteMapNode title="新增学生" description="Add student" url="AddStudent.aspx" />
+      <siteMapNode title="编辑学生" description="Edit student" url="EditStudent.aspx" />
+      <siteMapNode title="自我修改" description="Self_Edit student" url="SelfEditStudent.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="课程管理"  description="Course" url="">
+      <siteMapNode title="新增课程" description="Add Course" url="AddCourse.aspx" />
+      <siteMapNode title="编辑课程" description="Edit Course" url="EditCourse.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="成绩管理"  description="Score" url="">
+      <siteMapNode title="新增成绩" description="Add score" url="AddScore.aspx" />
+      <siteMapNode title="编辑成绩" description="Edit score" url="EditScore.aspx" />
+      <siteMapNode title="查询成绩" description="Search score" url="SearchScore.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="成绩统计"  description="Score Statics" url="">
+      <siteMapNode  title="按学生统计" description="Student Mode" url="StudentStatics.aspx" />
+      <siteMapNode  title="按课程统计" description="Course Mode" url="CourseStatics.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="更改密码"  description="Renew Password" url="EditPassword.aspx">
+    </siteMapNode>
+
+    <siteMapNode title="重新登录"  description="Login" url="Login.aspx">
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

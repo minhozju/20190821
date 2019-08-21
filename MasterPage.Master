@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="StudbManage.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title></title>
+  
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+  <form id="form1" runat="server">
+  <div style="text-align: center;">
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 800px; background-color: #ccffff;" align="center">
+      <tr>
+        <td colspan="3" style="height: 40px; background-color: ghostwhite;" align="center">
+          <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/0070.gif" />&nbsp;
+          <span class="auto-style1"><strong>学生信息管理</strong></span></td>
+      </tr>
+      <tr>
+        <td style="width: 100px; height: 277px; vertical-align: top; background-color: lightskyblue;">
+          <br />
+          <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="16px" Height="18px"
+            Width="131px" StaticDisplayLevels="2" OnMenuItemClick="Menu1_MenuItemClick1">
+              <DataBindings>
+                  <asp:MenuItemBinding />
+              </DataBindings>
+          </asp:Menu>
+        </td>
+        <td style="width: 10px;background-color: #f5f5f5;" align="center"></td>
+        <td style="width: 800px; height: 400px; vertical-align: text-top; background-color: #f5f5f5; text-align: left;">
+          <br />
+          <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" PathSeparator="→">
+            <NodeTemplate>
+             <a href='<%# Eval("url") %>'><%# Eval("title") %></a>
+            </NodeTemplate>
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+          </asp:SiteMapPath>
+          <br />
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" OnPreRender="ContentPlaceHolder1_PreRender">
+          </asp:ContentPlaceHolder>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="height: 6px; text-align: center; background-color: ghostwhite;">
+          版权所有&nbsp; 2018-2022
+        </td>
+      </tr>
+    </table>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+  </div>
+  </form>
+</body>
+</html>
